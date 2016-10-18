@@ -303,7 +303,7 @@ public class Logic {
 		Engineering[] currentEngReq = currentEng.requiredEng();
 		Tech[] currentEngTechReq = currentEng.requiredTech();
 		int[] currentEngTechLvl = currentEng.requiredTechLvl();
-		
+		//TODO check the requierments and report the neccariry levels
 		return true;
 	}
 

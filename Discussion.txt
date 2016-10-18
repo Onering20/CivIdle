@@ -250,3 +250,156 @@ puhrjj: I think about 300 Mb  and its installing to the C drive then transfering
 Zecrus: I guess that is a lot more convienient than downloading the whole program, since the .iso is 4.51gb
 puhrjj: Brb got to restart
 Zecrus: ok
+
+
+____
+
+Never tell your password to anyone.
+Zecrus: wassup
+Zecrus: any luck finding a job?
+puhrjj: Didn't see you there, I'm heading off to bed soon, however I have progressed on the code some, working mainly on setting up the variables and trying to distil the setting of the variables like engineering and other tech and accumulating the progress so far I plan on using java maps or sets or tables and on the job front not so far
+Zecrus: should I send you the latest version of my code?
+puhrjj: sure what type of changes did you make
+puhrjj: value changes should be the easiest to cope with
+Zecrus: I added ~2 buildings, a lot of research, and redid the dissent balance
+Zecrus: also a bunch of minor bug fixes
+puhrjj: most of that I have yet to work on so that wont be a problem
+Zecrus: no more assigning -10000% crafters and having 10100% of the intended workers
+puhrjj: but hey the math checks out even it the people don't
+Zecrus: just sent you the latest version
+puhrjj: ok would you want me to throw the code up on github?
+Zecrus: sure
+puhrjj: https://github.com/Onering20/CivIdle
+puhrjj: not uploaded yet and if you have a github account I can make it so you can upload files
+Zecrus: just created an account
+Zecrus: how do I get push access?
+puhrjj: whats your account
+Zecrus: Zecrus
+puhrjj: you have been invited
+puhrjj: https://github.com/Onering20/CivIdle/invitations
+Zecrus: just uploaded some files
+Zecrus: btw, did you play through the game so far?
+puhrjj: just the bit at the start
+Zecrus: I made the start a bit faster, spear 1 now costs 250EP so you can get it when you have ~50 people
+Zecrus: I was thinking of adding in a production system for lategame, not yet sure how to implement it
+Zecrus: I switched all the dissent modifiers from additive to multiplicative
+puhrjj: so it makes the dissent worse later on
+Zecrus: the opposite
+Zecrus: instead of something giving a flat -5% dissent, it now will multiply your dissent by .9
+puhrjj: ah with <1 values
+Zecrus: so if you had 50% dissent, they both have equal effect
+Zecrus: very lategame you could in theory get your dissent multiplier down to .1, so 500% dissent would become 50%
+puhrjj: ok I was going with the idea from the opposite side as in size of state making dissent more rampent
+Zecrus: ah
+Zecrus: I have all the governments set up so that dissent approximately doubles as population increases by 10x
+Zecrus: uploaded the maple file that graphs each government's dissent
+Zecrus: currently reading your code
+Zecrus: the new method of implementing engineering seems like it will be much easier than in labview
+puhrjj: yeah what i want to do with it at some point is make it pull that info from a file for easier configuration
+Zecrus: I notice that there are some new research names
+Zecrus: they seem good so far
+puhrjj: instramentum and cognitio are kind of filler names I took from a minecraft mod called thaumcraft they are just placeholders to avoid nulls
+Zecrus: the current medicine names seem too advanced for their costs
+Zecrus: I should probably create an EP/SP cost to approximate year converter
+puhrjj: I don't have a good idea on the tiers of anchent medicine so i approximated
+Zecrus: I'll make sure to figure out a good conversion in the next few days
+puhrjj: oh btw the file you are looking at has been moved to src/main
+Zecrus: I assume that getting buildings to work probably will probably be the most difficult step
+puhrjj: not necessarily since those are more of a active control they would be more of flags for now
+Zecrus: how does each tick work?
+puhrjj: I am currently planning on the all the different state based actions would be accounted for and then change the state at the end of the tick
+Zecrus: my current code isn't too efficient in this regard
+Zecrus: I currently have the government check every tick, which probably coudl be coded better
+Zecrus: same for every dissent modifier
+Zecrus: If you need to go to sleep I can talk to you later
+puhrjj: right now i just want to get eclipse working with it again moving the project was not as smooth as i thought it would be
+Zecrus: so far the code looks good
+Zecrus: eclipse isn't working?
+puhrjj: I was not liking that i change the sorce folder when I set up the github
+puhrjj: I got it to recognize it though
+Zecrus: from a design perspective, how many buildings do you think should be in the game?
+Zecrus: since the player has to manage each one, I don't want to have nearly as many buildings as engineering inventions
+puhrjj: thinking back to aoe one for each purpose
+puhrjj: maybe combine likes with likes or have overlap to promote different stratagies
+puhrjj: a building that gives bonus to gov and taxes vs a building that gives bonus to gov and med
+Zecrus: so instead of having roads and trains etc, I would just have land infrastructure
+puhrjj: possibly
+Zecrus: I'm not entirely sure how to implement this, but here is my current idea:
+Zecrus: construction would focus on different aspects of society: housing, infrastructure, health, education, entertainment, military, production
+Zecrus: each building would be an invention, which would provide a boost to a certain construction focus
+Zecrus: this might be too abstract
+puhrjj: so Stables would be a invetion on a tech tree
+Zecrus: basically, though I might need to add a new tree
+puhrjj: play around with it but if it gets you confused then hold off until we refine it
+Zecrus: maybe it would be better to just have buildings be replaced by new ones
+puhrjj: like have a few aspects to focus on and they give a benifit but are limited to a small number
+puhrjj: primary : full bonus, secondary: half bonus, tirtiary: quarter bonus. adding a new focus becomes primary and tirtiary falls away
+Zecrus: That could be an interesting system, but I'm not really sure how that utilizes build points and gold
+puhrjj: I would think unlocking the three slots would take bp and using them would have a gold upkeep
+puhrjj: or every switch has a fixed bp cost
+puhrjj: as in you built a new reserch building and let the others fall into disrepair
+Zecrus: I'll think about it, and try to make a decision in the next few days
+Zecrus: the current gameplay from buildings has tested well, mostly I just want to make sure it can work for lategame as well as early-mid
+Zecrus: managing 5 BP buildings and 5 GP buildings works out well, I just need to make sure I don't end up with 50 buildings to manage
+puhrjj: yeah that would become confusing at best and at worst drive players away from the complexity
+Zecrus: as your civilization unlocks better building/gold collection methods, the upkeep costs of early buildings becomes comparatively small
+Zecrus: it might just be enough to allow the player to hide buildings, and if there are 50 buildings the player will hide 40 of them and focus on 10
+puhrjj: or have early building be incorperated/upgraded to later buildings
+Zecrus: on second thought, having build upkeep become quickly irrelevant would require a fast exponential curve to earnings
+Zecrus: I don't want an empire to make 10^30 gold per second
+puhrjj: or you could let early buildings be abandond
+puhrjj: an d have their effect fall away  ass upkeep is removed
+puhrjj: touch typing is hard to keep correct
+Zecrus: so I could have 50 buildings, and have the player choose 10 of them to be able to build, and the other 40 would be locked out?
+puhrjj: maybe but after so many years/ticks the buildings are considered removed
+puhrjj: 'you just built a castle do you still want to maintain the first mud hut?'
+Zecrus: but then where do the peasants live?
+puhrjj: the mines
+Zecrus: I think I'll just have buildings upgrade into new ones.  Researching brick houses would replace the hut building with the brick house building
+Zecrus: brick houses will have a higher upkeep, cost, and better bonuses
+Zecrus: and a revert option would be added
+Zecrus: huts automatically get abandoned once brick houses are available
+puhrjj: we should keep the other idea in mind in case we wont to add a function to construction as maintaince points
+puhrjj: based on how many contruction workers
+Zecrus: thats what BP upkeep is
+Zecrus: I currently have half of my buildings use build point upkeep, and the other half use gold upkeep
+Zecrus: early-mid game you will probably keep 5-20% of your workers as builders in order to maintain the BP upkeep
+puhrjj: otherwiise the town falls apart'
+Zecrus: currently going into BP debt is the same as going into gold debt, and it raises dissent
+Zecrus: I think I'll switch that to a system where buildings automatically turn off
+puhrjj: probably rebalence it where its half dissent and half production hit
+Zecrus: but I don't want someone lategame to have a slight BP or gold deficit and go from 50% dissent to 200% when everything turns off
+Zecrus: 200% automatically caps to 99%, so there isn't negative production
+puhrjj: maybe for every year or so in defict raises the impact of the defict
+Zecrus: In an older version going over 100% dissent would cause you to have negative production, get higher dissent, and quickly have you get -inf% dissent and crash the game
+puhrjj: maybe have a bp floor that is like 40-50% current maximum
+Zecrus: The current system has dissent added based on (gold debt + BP debt)/population, maxing out at 20%
+Zecrus: I can see this being abused if a player is willing to get 20% debt, and sets all buildings to max level
+Zecrus: I don't want to punish players who went afk with a minor deficit, but I don't want an abusable system
+puhrjj: maybe have debt thresholds that prevent certain actions
+Zecrus: no researching or increasing population if you have too much debt?
+puhrjj: maybe no researching and building, people will breed if the dwplease
+puhrjj: force it into a situation that enables growth out of debt
+Zecrus: I guess that isn't abusable, the player can't stock up a large EP/SP bonus from purposely going into massive debt and use it
+Zecrus: I
+Zecrus: I'll implement it in the next build
+puhrjj: ok I think im going to head off soon, just so you know I have been keeping a log of this discussion for idea review on  the github under discussion.txt
+Zecrus: nice, that will be useful
+puhrjj: probably should trim it at some point there is a lot of banter in there
+Zecrus: btw, will you be on steam more often?
+puhrjj: I generally keep steam running how ever with warframe i get better performance with the overlay off
+Zecrus: I'll create a new build in the next few days and post it
+Zecrus: I'll make sure to have an EP cost to year converter, lock research for players in debt, and add some replacement buildings
+puhrjj: ok try to get a picture of the diagram as well so I can check for changes, and if you know what to change in the java file you can edit directly on git hub just follow your changes with "//TODO check" and that will alert me that changes were made and to make sure they do what is intended
+Zecrus: actually, I probably won't add the debt lock since I would have to change every module, its too late to implement it in the labview code
+puhrjj: that might be easier to do in java anyways
+Zecrus: making the pictures now
+Zecrus: 7010x7314 pixels
+puhrjj: windows 7 photo previewer doesn't like it when they are that big, however eclipse has no problem with that size
+Zecrus: I put all the pictures in a branch called images
+Zecrus: I thought that was a new folder
+Zecrus: I get it now, a branch is a different version of the program
+puhrjj: to do folders in github is weird  you have to name them "folder/file.ext"
+Zecrus: I assume you can access the branch without any problems
+puhrjj: yea Ill merge the branch and then put them in a folder
+puhrjj: if you make a branch just click pull request and that will prompt to see if it can be merged
