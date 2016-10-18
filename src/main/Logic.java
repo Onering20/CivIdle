@@ -286,7 +286,7 @@ public class Logic {
 					"You only have %d engingeering points and need %d points,%nchain some more grad students to their desks.",
 					this.ep, eng.requiredEP());
 		} else if(!checkRequirements(eng, currentEng)){
-		
+			return false;
 		
 		} else {
 			this.engTechLvls.put(type, eng);
