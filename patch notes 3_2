@@ -1,0 +1,15 @@
+Balance and bugfix patch
+
+gave theocracy a food bonus (10% for theo 1, 15% for theo 2)
+	fixed temple gold cost
+	improve early medicine, now provides 5% dissent reduction per level
+	reconsidered bow requirements
+		to keep it from forcing a military focus, changed to military 2 and 200k EP
+	net 2 had wrong cost
+	aqueduct had wrong costs, wrong labels
+	theocracy 1 nerf, 2.8 root instead of 3 root
+	theocracy 2 nerf, +5 dissent, 3.3 root instead of 3.5 root
+	BP upgrades too good, half all
+	bow nerfed from 0.25 bonus to 0.125 bonus
+	nerfed farming 1 and 2 from 1.5 hunter a and b to 0.5 hunter b, 1 hunter a
+	Fixed bug where buildings could not be set to 0 if bp was <0
