@@ -1,0 +1,30 @@
+Patchnotes 3_3
+
+Balance changes, some bugfixes, new buildings
+
+3.3
+	Buff to increased food consumption dissent mod (10,20% to 15,30%)
+	Theocracy 1 building upkeep mod from 0.5 to 0.666
+	Theo 2 building upkeep mod from 0.4 to 0.5
+	Kingdom food mult to 1.15
+	kingdom warrior b from 2 to 1.5
+	empire food mult to 1.2
+	kingdom dissent people from 4th root to 3.8th root 
+	empire dissent people from 4.1th root to 4th root
+
+	minor adjustment to land conversion
+	changed trireme from warrior b mod to military mod
+	Added police force in construction gp
+	unsure of cause police force gold cost doesn't work
+	Fixed bug where SP/EP multiplier buffed BP production
+	nerf to caste system and imperialism, warrior b mults from 6,8 to 4,5
+	nerf to food from trade/tribute
+		Farming now gives 25% extra food/level from tribute (from 100%)
+		Trading now gives 25% extra food/level from tribute (from 100%)
+	maybe fixed? glitch when max hunter cap is met
+	MARKET IMPLEMENTED (bp building)
+		permanent land now can provide gold, giving it more lategame use
+		effect improves if gov is free market capitalism
+  POLICE FORCE IMPLEMENTED (gp building)
+    Increases base dissent, but decreases dissent multiplier
+    Useful when base dissent is very high
