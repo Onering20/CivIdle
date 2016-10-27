@@ -1,0 +1,16 @@
+Played a game through the democracy path, made some balance changes and fixes
+
+3.4
+	Buffed democracy1+2  -10% dissent
+	Buffed medicine 1 (extra -5% dissent, now -10%)
+	Added road prod mod to max hunter count
+	Buffed construction passive, now provides 10% upkeep reduction per level
+	Buffed temple, 5% per level instead of 3%, theocracy now gets 2x effect instead of 3x
+	Fixed: Market upkeeps had wrong values
+	Buff caravan, now increases trade level by 2 instead of 1
+	Buffed confederacy (-10% base, slightly better multiplier)
+	Fixed: Free market government didn't work, had typo in code
+	Buffed market (doubled gold from permanent land, changed market trade mult from 1.15 
+to 1.2 per level)
+	Added descriptions to government page
+	Changed government upkeep mod to a government BP mult mod
