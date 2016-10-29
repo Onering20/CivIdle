@@ -1,0 +1,27 @@
+Game should now be balanced up to around renaissance era (20M people, 10B SP/EP)
+  It currently takes ~100 ingame years (36500 ticks, or 10 hours at 1tick/s) to get this far
+  I expect that it will take much longer for the average player to get this far, but further balance requires other playtesters
+
+BP building rebalance- it was too easy lategame to have level 3 of every bp building
+		Hut upkeeps and build costs increased
+		Road upkeeps and build costs increased, land production mod decreased
+		Road land conversion buff moved from paved tar to multiplayer stone, values increased
+		Aqueduct upkeep tripled
+		no changes to market
+		no changes to harbor
+	Buff to all writing from 10% to 15%, to help compensate for building nerf
+	Increase to cost of all siege weapons by 10x
+		Too many inventions costed similar amounts and provided similar bonuses
+		This also fits better historically
+		All science requirements increased by 1 level
+	Removed military requirement for trireme
+	Swapped physics and military level requirement for reinforced chariot
+	New inventions
+		Added guns
+			guns, siege weapons, and vehicles is probably all that is needed for lategame
+			military.  Bioweapons could be added if biology needs more lategame support.  
+		Added lots of details to engineering 3 page
+		Added 2 more levels to farming
+	Nerf to gold production, each economics level after the first now has half effect
+  updated temple upkeep description 
+	fixed: previous start was left in test mode with 10E12 starting SP
