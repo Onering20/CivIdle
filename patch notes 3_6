@@ -1,0 +1,10 @@
+3.6
+	Fixed: buildings could not be downgraded to levels 1/2 when bp was negative
+	Increased level 4 government cost by 10x for historic reasons (new gov starts renaissance)
+		also gameplay reasons, further from farming 2
+	Added level 5 governments
+	Added level 11,12,13 sciences to UI
+	Martial law implemented
+	Cleaned up BP/EP/SP production diagrams
+	Buff to construction level upkeep mod (from -10% upkeep to -15% upkeep)
+		meant to help offset the huge nerf caused by fixing BP income 
