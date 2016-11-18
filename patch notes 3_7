@@ -1,0 +1,15 @@
+3.7
+  Implemented Optics, Electronics, Vehicles, and telegraph
+  Added mechanical inventions
+  Added automation
+  Military science no longer reduces warrior c, instead gives +10% warrior b
+	gave all oligarchies bonus to research, -10% food
+	Added factory and power plant
+	Cleaned up UI
+	Undid construction level buff, now gives -10% upkeep per level
+	change steel sword cost to 500M
+	fixes costs on printing press, caravel, steamship
+	changed aqueduct 3 upkeep from .45 to .25
+  Fixed gun EP costs, military requirement
+	# of people switched to quad from int
+	# of hunters, warrior, etc switched to quad from int
